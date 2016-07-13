@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_divider"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/questionnum"
+        android:gravity="center"
+        android:paddingTop="7dp"
+        android:text="3/10"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/vp_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/verificationbg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/questioncontent"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="天冷加衣"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="14dp"
+            android:paddingBottom="32dp"
+            android:src="@drawable/questionimg" />
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/divider_horizontal" />
+
+        <RadioGroup
+            android:id="@+id/rap_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="41dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="41dp" >
+
+            <RadioButton
+                android:id="@+id/chk_nothave"
+                android:layout_width="64dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_nothave"
+                android:button="@null"
+                android:gravity="center"
+                android:text="没有"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/chk_sometimes"
+                android:layout_width="64dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_sometimes"
+                android:button="@null"
+                android:gravity="center"
+                android:text="有时"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/chk_usual"
+                android:layout_width="64dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_usually"
+                android:button="@null"
+                android:gravity="center"
+                android:text="经常"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

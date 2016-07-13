@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vpfather"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_divider"
+    android:clipChildren="false"
+    android:layerType="software"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/btn_login" >
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:paddingLeft="15dp"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            style="@style/top_memu_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="衰老测试" />
+    </RelativeLayout>
+
+    <com.example.view.MyViewPager
+        android:id="@+id/vote_submit_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:clipChildren="false" />
+
+</LinearLayout>
