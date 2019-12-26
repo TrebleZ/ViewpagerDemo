@@ -16,6 +16,9 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
+/**
+ * test
+ */
 public class VPAdapter extends PagerAdapter {
 	// 传递过来的页面view的集合
 	private List<View> viewItems;
